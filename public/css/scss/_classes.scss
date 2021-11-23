@@ -1,0 +1,27 @@
+.classes-page {
+  .header-aside {
+    font-size: 30px;
+  }
+  .btn-start {
+    &:hover {
+      cursor: pointer;
+    }
+
+    color: $primary-color-white;
+    font-family: $press-start;
+    font-size: 12px;
+    border-radius: 50px;
+    text-align: center;
+  }
+  .resume {
+    .bg-red {
+      border-radius: 10px;
+      color: $primary-color-white;
+    }
+  }
+
+  .contents-start {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,89 @@
+.cards-page {
+  .btn-success {
+    font-size: 13px;
+    padding: 10px 18px;
+    font-family: $press-start;
+  }
+
+  img.bluep,
+  img.orangep {
+    max-width: 240px;
+    max-height: 160px;
+  }
+
+  .faq-container {
+    color: $primary-color-black;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .faq {
+    background-color: $primary-color-white;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  .faq.active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-title {
+    margin: 0 35px 0 0;
+  }
+
+  .faq-text {
+    display: none;
+    margin: 30px 0 0;
+  }
+
+  .faq.active .faq-text {
+    display: block;
+  }
+
+  .faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .faq-toggle:focus {
+    outline: 0;
+  }
+
+  .faq-toggle .bi-x-circle-fill {
+    display: none;
+  }
+
+  .faq.active .faq-toggle .bi-x-circle-fill {
+    font-size: 20px;
+    display: block;
+  }
+
+  .faq.active .faq-toggle .bi-chevron-down {
+    display: none;
+  }
+
+  .bi-question-circle-fill {
+    color: $primary-color-red;
+  }
+
+  .bi-check-circle-fill {
+    color: $primary-color-green;
+  }
+}

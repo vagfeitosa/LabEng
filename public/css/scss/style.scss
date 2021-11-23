@@ -1,0 +1,293 @@
+@import "config";
+@import "utilities";
+@import "login";
+@import "register";
+@import "home";
+@import "performance";
+@import "classes";
+@import "cards";
+@import "show";
+@import "schedule";
+@import "students";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Press+Start+2P&display=swap");
+
+/* -- Bootstrap -- */
+//  Icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+//  CSS
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css");
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: $primary-color-black;
+  &:link {
+    text-decoration: none;
+  }
+}
+
+.login-page,
+.register-page {
+  .btn-success {
+    border-radius: 20px;
+    font-weight: 800;
+    background-color: $primary-color-green;
+    box-shadow: 5px 5px $primary-color-yellow;
+    padding: 10px;
+    font-size: 20px;
+
+    &:hover {
+      color: $primary-color-black;
+      background-color: $primary-color-yellow;
+      box-shadow: 5px 5px $primary-color-green;
+    }
+  }
+}
+
+.btn-light {
+  border-radius: 20px;
+  box-shadow: 5px 5px $primary-color-gray;
+
+  &:hover {
+    box-shadow: 5px 5px $second-color-white;
+  }
+}
+
+.required {
+  color: $primary-color-red;
+  font-weight: 800;
+}
+
+.navbar {
+  background-color: $primary-color-green;
+}
+
+.navbar-nav.ml-auto {
+  cursor: pointer;
+}
+
+.menu-append {
+  position: absolute;
+  z-index: 100;
+  top: 59px;
+  right: 77px;
+  padding: 30px;
+  cursor: initial;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 23px;
+  color: $primary-color-white;
+
+  &:hover {
+    color: $second-color-yellow;
+  }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: $active-button;
+  font-size: 23px;
+}
+
+.js-user-avatar {
+  font-size: 20px;
+  padding: 5px 10px;
+  color: $primary-color-white;
+  border-radius: 100%;
+  text-align: center;
+  font-weight: 900;
+}
+
+.bi-house,
+.bi-journal-text,
+.bi-star,
+.bi-person-lines-fill,
+.bi-arrow-left-circle,
+.bi-trophy {
+  margin: 18px;
+}
+
+hr {
+  height: 2px;
+  background-color: $primary-color-white;
+  border: none;
+  margin: 30px 0px;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.user-name {
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.class-duration {
+  font-size: 17px;
+  border-radius: 100%;
+  padding-top: 35px;
+  border: 10px solid $primary-color-red;
+  height: 120px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.class-points,
+.class-points-avg {
+  font-size: 17px;
+  border-radius: 100%;
+  padding-top: 20px;
+  border: 10px solid;
+  border-color: $second-color-gray;
+  height: 120px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.class-attr {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.etapa-escolar {
+  font-size: 16px;
+  text-align: center;
+}
+
+form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.hello {
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+input.form-control {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px $primary-color-green solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  border-radius: 0px;
+}
+
+input.form-control:focus,
+input.form-control:valid {
+  outline: 0;
+  border-bottom: 2px $primary-color-green solid;
+}
+
+.logo {
+  color: $primary-color-yellow;
+  font-family: $press-start;
+  font-weight: bolder;
+  text-shadow: 4px 2px $primary-color-black;
+  text-align: center;
+
+  &:hover {
+    color: $second-color-yellow;
+  }
+}
+
+.register-page,
+.login-page {
+  .logo {
+    font-size: 30px;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+  .form-group {
+    margin-bottom: 3rem;
+  }
+}
+
+.home-page,
+.performance-page,
+.classes-page,
+.cards-page,
+.schedule-page,
+.week1-page,
+.week2-page,
+.students-page {
+  .row.resume {
+    background-color: $second-color-gray;
+    box-shadow: 10px 10px $primary-color-yellow;
+    width: 90%;
+    border-radius: 10px;
+    padding: 30px;
+    border-style: outset;
+    border: 5px solid $primary-color-green;
+  }
+  .resume {
+    padding: 50px;
+    border-radius: 10px;
+    min-height: 72vh;
+    hr {
+      background-color: $primary-color-black;
+      margin: 10px 0px;
+      height: 0.1rem;
+    }
+  }
+  .header-aside {
+    font-weight: 800;
+  }
+}
+
+.schedule-page {
+  .resume {
+    min-height: unset;
+  }
+}
+
+.show-card-page,
+.edit-card-page,
+.add-card-page,
+.schedule-page,
+.week1-page,
+.week2-page,
+.cards-page {
+  .bg-transparent {
+    left: 400px;
+  }
+}
+
+.btn-dark,
+.btn-success,
+.btn-danger {
+  border-radius: 50px;
+}
+
+table thead th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+table thead th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.table thead th {
+  border-top: none;
+  border-bottom: none;
+}

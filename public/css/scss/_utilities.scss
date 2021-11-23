@@ -1,0 +1,30 @@
+//Backgrounds
+
+.bg {
+  &-green {
+    @include set-background($primary-color-green-light);
+  }
+  &-white {
+    @include set-background($second-color-white);
+  }
+  &-red {
+    @include set-background($primary-color-red);
+  }
+  &-orange {
+    @include set-background($primary-color-orange);
+  }
+  &-blue {
+    @include set-background($primary-color-blue);
+  }
+  &-green-dark {
+    @include set-background($primary-color-green-dark);
+    left: 400px;
+    min-height: 92vh;
+  }
+}
+
+.display {
+  &-center {
+    @include displayCenter(center);
+  }
+}

@@ -1,0 +1,40 @@
+/* Theme Colors */
+$primary-color-green: #00bfa5;
+$primary-color-green-light: rgba(0, 191, 165, 0.5);
+$primary-color-green-dark: rgba(0, 191, 165, 0.15);
+$primary-color-yellow: #fff76a;
+$primary-color-blue: #6639e8;
+$primary-color-red: #ec524b;
+$primary-color-orange: #f5b461;
+$primary-color-white: #ffffff;
+$primary-color-black: #000000;
+$primary-color-gray: rgba(189, 189, 189, 1);
+
+/* Button Colors */
+$second-color-green: #6fcf97;
+$second-color-yellow: #ffe227;
+$second-color-white: #f8f9fa;
+$second-color-gray: #f4f4f4;
+$active-button: rgba(196, 196, 196, 0.5);
+
+/* Fonts */
+$press-start: 'Press Start 2P', cursive;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+@mixin displayCenter($align-items) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: center;
+}
