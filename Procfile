@@ -1,1 +1,1 @@
-web: bin/app/controllers/pages.php
+web: app/controllers/pages.php
