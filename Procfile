@@ -1,1 +1,1 @@
-web: app/controllers/pages.php
+web: app/.htaccess-Apache2
