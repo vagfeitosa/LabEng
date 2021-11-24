@@ -1,2 +1,2 @@
 Procrelease: ./release-task.sh
-web: ./bin/app/config/config.php
+web: ./app/config/config.php
