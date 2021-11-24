@@ -1,2 +1,1 @@
-Procrelease: ./release-task.sh
-web: .package-lock.json
+web: yarn start
