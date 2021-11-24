@@ -1,1 +1,1 @@
-web: yarn app/.htaccess
+web: app/.htaccess
