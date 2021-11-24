@@ -1,1 +1,1 @@
-web: APRENDI-APP-Apache
+web: bin/app/controllers/pages.php
