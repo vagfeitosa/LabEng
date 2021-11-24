@@ -1,1 +1,1 @@
-web: app/.htaccess
+web: app/controllers/Pages.php
