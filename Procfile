@@ -1,1 +1,1 @@
-web: app/controllers/Pages.php
+web: APRENDI-APP
