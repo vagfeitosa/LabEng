@@ -1,2 +1,2 @@
 Procrelease: ./release-task.sh
-web: ./app
+web: .htaccess
