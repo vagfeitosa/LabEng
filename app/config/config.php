@@ -17,9 +17,10 @@ define("DB_USER", "b79737e33a0f89");
 define("DB_PASS", "c2e946b2");
 define("DB_NAME", "heroku_e07c2aaa5eea120");
 
+/*
 // App Root
 define('APPROOT', dirname(dirname(__FILE__)));
 // URL Root
 //define('URLROOT', '');*********************
 // Nome do Site
-define('SITENAME', 'APRENDI!');
+define('SITENAME', 'APRENDI!');*/
