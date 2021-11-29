@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 APRENDI-APP/
+web: vendor/bin/heroku-php-apache2 main/
