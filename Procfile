@@ -1,1 +1,1 @@
-web: app/.htaccess-Apache2
+web: vendor/bin/heroku-php-apache2 APRENDI-APP/
