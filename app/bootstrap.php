@@ -1,6 +1,6 @@
 <?php
-  // require_once 'libraries/Core.php';
-  // require_once 'libraries/Controller.php';
+  require_once 'libraries/Core.php';
+  require_once 'libraries/Controller.php';
 
   // Carrega Config
   require_once 'config/config.php';
