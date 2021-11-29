@@ -1,1 +1,1 @@
-web: bootstrap/
+web: public index.php
