@@ -1,21 +1,6 @@
--- phpMyAdmin SQL Dump
--- version 5.1.0
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Tempo de geração: 20-Abr-2021 às 02:35
--- Versão do servidor: 5.7.33-log
--- versão do PHP: 8.0.3
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Banco de dados: `aprendi_app`
@@ -67,7 +52,7 @@ CREATE TABLE `disciplinas` (
 --
 
 INSERT INTO `disciplinas` (`id`, `name`, `sala_id`, `qtySemanas`, `created_at`) VALUES
-(1, 'Ingles', 1, 8, '2021-04-19 21:20:17');
+(1, 'Ingles', 1, 8, '2021-10-19 21:20:17');
 
 -- --------------------------------------------------------
 
@@ -77,7 +62,7 @@ INSERT INTO `disciplinas` (`id`, `name`, `sala_id`, `qtySemanas`, `created_at`) 
 
 CREATE TABLE `escolas` (
   `id` int(10) NOT NULL,
-  `name` varchar(50) NOT NULL DEFAULT 'ETEC São Caetano do Sul',
+  `name` varchar(50) NOT NULL DEFAULT 'ETEC Zona Leste',
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -86,7 +71,7 @@ CREATE TABLE `escolas` (
 --
 
 INSERT INTO `escolas` (`id`, `name`, `created_at`) VALUES
-(1, 'ETEC São Caetano do Sul', '2021-04-19 21:20:17');
+(1, 'ETEC Zona Leste', '2021-10-19 21:20:17');
 
 -- --------------------------------------------------------
 
@@ -140,11 +125,11 @@ CREATE TABLE `posts_points` (
 
 
 INSERT INTO `posts` (`id`, `aula_id`, `user_id`, `title`, `body`, `created_at`) VALUES
-(1, 1, 1, 'Am I late?', 'Estou atrasado[a]?', '2021-05-18 00:19:54'),
-(2, 2, 1, 'Are you a doctor?', 'Você é médico[a]?', '2021-05-18 00:58:41'),
-(3, 1, 1, 'Is Danilo at home?', 'Danilo está em casa?', '2021-05-18 02:10:33'),
-(4, 2, 1, 'Are Carol and I in this group?', 'Carol e eu estamos nesse grupo?', '2021-05-18 02:15:25'),
-(5, 2, 1, 'Is the toy broken?', 'O brinquedo está quebrado?', '2021-05-18 02:15:37');
+(1, 1, 1, 'Am I late?', 'Estou atrasado[a]?', '2021-10-18 00:19:54'),
+(2, 2, 1, 'Are you a doctor?', 'Você é médico[a]?', '2021-10-18 00:58:41'),
+(3, 1, 1, 'Is Danilo at home?', 'Danilo está em casa?', '2021-10-18 02:10:33'),
+(4, 2, 1, 'Are Carol and I in this group?', 'Carol e eu estamos nesse grupo?', '2021-10-18 02:15:25'),
+(5, 2, 1, 'Is the toy broken?', 'O brinquedo está quebrado?', '2021-10-18 02:15:37');
 
 --
 -- Acionadores `posts_points`
@@ -183,7 +168,7 @@ CREATE TABLE `salas` (
 --
 
 INSERT INTO `salas` (`id`, `name`, `etapaEscolar`, `ano`, `disciplina_id`, `escola_id`, `created_at`) VALUES
-(1, 'Turma 22', 'Ensino Fundamental II', 6, 1, 1, '2021-04-19 21:20:17');
+(1, 'Turma 22', 'Ensino Fundamental II', 6, 1, 1, '2021-10-19 21:20:17');
 
 -- --------------------------------------------------------
 
@@ -207,8 +192,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `role`, `name`, `username`, `password`, `sala_id`, `points`, `created_at`) VALUES
-(1, 'Professor', 'Professor Professor', 'professor', '$2y$10$g5MBz0diPuPGUzxqoWejLegKmSrOVDQ7XNZ0sO.T.WyplkpL04pz.', 1, 0, '2021-04-19 21:20:17'),
-(2, 'Aluno', 'Aluno Aluno', 'aluno', '$2y$10$g5MBz0diPuPGUzxqoWejLegKmSrOVDQ7XNZ0sO.T.WyplkpL04pz.', 1, 0, '2021-04-19 21:20:17');
+(1, 'Professor', 'Professor Professor', 'professor', '$2y$10$g5MBz0diPuPGUzxqoWejLegKmSrOVDQ7XNZ0sO.T.WyplkpL04pz.', 1, 0, '2021-10-19 21:20:17'),
+(2, 'Aluno', 'Aluno Aluno', 'aluno', '$2y$10$g5MBz0diPuPGUzxqoWejLegKmSrOVDQ7XNZ0sO.T.WyplkpL04pz.', 1, 0, '2021-10-19 21:20:17');
 
 --
 -- Acionadores `users`
